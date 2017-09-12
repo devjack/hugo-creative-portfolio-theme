@@ -12,5 +12,10 @@
       </div>
   </div>
   {{ partial "scripts.html" . }}
+  
+  {{ $commit := getenv "GIT_HASH"}}
+  {{ if $commit }}
+  {{ (print "<!-- HASH: " $commit " -->") | safeHTML }}
+  {{end}}
 </body>
 </html>
