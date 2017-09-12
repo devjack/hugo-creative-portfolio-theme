@@ -11,3 +11,14 @@ img#main-logo {
 img#main-logo+* {
     margin-top: 20px;
 }
+
+@media screen and (max-width: 767px){
+    .row-offcanvas-left.active .sidebar-offcanvas {
+        /* This hides the sidebar, previously the text overflowed by a few pixels */
+        display: initial;
+    }
+    .row-offcanvas-left .sidebar-offcanvas {
+        /* This hides the sidebar, previously the text overflowed by a few pixels */
+        display: none;
+    }
+}
